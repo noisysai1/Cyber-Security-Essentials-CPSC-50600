@@ -1,1 +1,87 @@
+🛡️ Week 1 - Cybersecurity Labs Summary
+🔍 1. Identifying Running Processes (Lab 2.0.1.2)
+Explored running Windows processes using TCPView from Sysinternals Suite.
 
+Observed lsass.exe (Local Security Authority Subsystem Service) running in C:\Windows\System32.
+
+Launched and closed Firefox, noted how new processes appeared/disappeared in TCPView.
+
+TCPView helps visualize active TCP/UDP endpoints and associated processes.
+
+🧵 2. Processes, Threads, Handles & Registry (Lab 2.1.2.10)
+Used Process Explorer to:
+
+Investigate parent/child relationships (e.g., cmd.exe → conhost.exe).
+
+Kill processes and observe how it terminates associated child processes.
+
+Explored:
+
+Threads Tab to inspect execution details.
+
+Handles Tab to view open file/memory references.
+
+Navigated Windows Registry to locate and modify EulaAccepted for Process Explorer.
+
+Changing value from 1 to 0 prompts license agreement again on next launch.
+
+👥 3. Creating and Managing User Accounts (Lab 2.2.1.10)
+Created local user User1 with password Train1ng$.
+
+Checked folder access permissions in C:\Users and found:
+
+User1 had limited access.
+
+Admin account retained full access to all profiles.
+
+Promoted User1 to admin and then reverted to standard user.
+
+Deleted the user using Control Panel and Computer Management tools.
+
+💻 4. Using Windows PowerShell (Lab 2.2.1.11)
+Ran basic commands: dir, ping, ipconfig in both cmd and PowerShell.
+
+Learned that:
+
+dir maps to Get-ChildItem.
+
+PowerShell allows extended network diagnostics with netstat -abno.
+
+Used PowerShell to clear the Recycle Bin via Clear-RecycleBin.
+
+📊 5. Windows Task Manager Exploration (Lab 2.2.1.12)
+Explored Processes, Services, and Performance tabs:
+
+Observed process hierarchy and memory usage.
+
+Identified conhost.exe and cmd.exe relationship.
+
+Verified network activity and physical memory usage (e.g., 847MB used, 3.1GB available).
+
+Used Task Manager to end Firefox and confirm immediate process termination.
+
+📈 6. Monitor and Manage System Resources (Lab 2.2.1.13)
+Managed Routing and Remote Access service:
+
+Observed status changes in Task Manager and Network Connections.
+
+Created Performance Logs using Data Collector Sets in Performance Monitor:
+
+Logged memory usage (Available MBytes) every 4 seconds to a .csv file.
+
+Visualized resource usage in real-time and report mode.
+
+Deleted logs and cleaned up manually.
+
+🧠 7. Cybersecurity Case Studies (WK1 DB2)
+Analyzed four major cyberattacks:
+
+Home Depot (2014) – POS malware, 56M card details stolen.
+
+Target (2013) – POS malware, 40M cards + 70M customer details exposed.
+
+Stuxnet (2010) – ICS malware, targeted Iran's nuclear centrifuges.
+
+Sony Pictures (2014) – Data theft, political motives, wiper malware used.
+
+Each case involved different tools, motivations (financial, political), and outcomes (data breach, system damage).
