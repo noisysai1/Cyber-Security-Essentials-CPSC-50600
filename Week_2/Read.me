@@ -1,1 +1,74 @@
+# 🔐 Cybersecurity Labs - Week 2
+
+This week's focus was on **Linux OS fundamentals**, **IoT vulnerabilities**, and **filesystem and log management**. Below is a detailed summary of all labs and concepts covered during Week 2 of the course.
+
+---
+
+## 📁 Labs Completed
+
+### 1. Learning the Details of Attacks (Lab 1.1.2.6)
+- Researched IoT vulnerabilities across four sectors: **Industry**, **Energy**, **Healthcare**, and **Government**.
+- Key insights:
+  - Common vulnerabilities include use of default passwords, lack of encryption, and outdated firmware.
+  - Attackers exploit IoT through malware, social engineering, or remote code execution.
+  - Mitigation includes firmware updates, strong credentials, encrypted communication, and secure physical access.
+
+---
+
+### 2. Working with Text Files in the CLI (Lab 3.1.2.6)
+- Used **SciTE** and **nano** to:
+  - Create and edit files (`space.txt`).
+  - Save and open files using GUI and terminal.
+- Learned basics of command-line editors:
+  - `nano`: Save (`Ctrl+O`), Exit (`Ctrl+X`), Help (`Ctrl+G`), and navigation commands.
+- Explored user and system configuration file locations: `/home/username` and `/etc`.
+
+---
+
+### 3. Getting Familiar with the Linux Shell (Lab 3.1.2.7)
+- Practiced basic commands:
+  - `pwd`, `cd`, `ls -l`, `mkdir`, `echo`, `>`, `cat`, `man`.
+- Created directories (`cyops_folder1` to `cyops_folder4`) and navigated using absolute and relative paths.
+- Learned to use redirection (`>`) to output to a file and `man` pages to explore command documentation.
+
+---
+
+### 4. Linux Servers (Lab 3.1.3.4)
+- Identified running processes using `ps -elf` and `ps -ejH`.
+- Used `netstat -tunap` to view network services and detected the **nginx** server listening on port 80.
+- Differentiated between user processes and background services (e.g., `nginx`, `rsyslogd`, `lightdm`).
+
+---
+
+### 5. Locating Log Files (Lab 3.2.1.4)
+- Located logs under `/var/log/` (e.g., `messages`, `kern.log`, `nginx/access.log`).
+- Analyzed:
+  - Web server logs for client requests.
+  - OS logs for kernel events (network link up/down, USB connection).
+- Used commands: `cat`, `more`, `man nginx`, `ps | grep nginx`, and explored `nginx.conf`.
+
+---
+
+### 6. Navigating Linux Filesystem and Permissions (Lab 3.2.2.4)
+- Explored filesystem structure using `lsblk`, `mount`, and `umount`.
+- Mounted second drive (`/dev/sdb1`) to `/home/analyst/second_drive`.
+- Viewed and modified file permissions using `ls -l` and `chmod`.
+  - Example: `-rw-r--r--` means owner can read/write; group and others can only read.
+
+---
+
+## 🛠 Key Tools & Commands
+- `nano`, `SciTE` (editors)
+- `mkdir`, `cd`, `ls`, `pwd`, `man`, `echo`, `cat`, `more`
+- `ps`, `netstat`, `mount`, `umount`
+- `/var/log/`, `/etc/nginx/`, `/home/analyst/`
+- File permissions: `r` (read), `w` (write), `x` (execute)
+
+---
+
+## 📌 Summary
+This week provided foundational Linux skills and introduced basic server management, file handling, permissions, and log analysis. These are critical for any cybersecurity analyst dealing with Linux-based environments.
+
+
+
 
