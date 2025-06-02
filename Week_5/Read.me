@@ -1,0 +1,52 @@
+🔐 Cybersecurity Labs – Week 5
+Welcome to Week 5 of the Cybersecurity Lab series. This week focused on foundational exploration of system processes, networking analysis, and real-world attack simulations. The labs utilized tools like Wireshark, Windows Task Manager, PowerShell, and packet captures to examine how systems operate under normal and malicious activity.
+
+🧠 Key Labs and Learnings
+1. Exploring DNS Traffic (Lab 7.3.1.6)
+Used Wireshark to inspect DNS queries and responses.
+
+Filtered packets with udp.port == 53.
+
+Analyzed source/destination MAC and IP addresses, recursive queries, and DNS resolution for domains like www.cisco.com.
+
+Takeaway: DNS traffic can reveal critical network metadata, useful for both defenders and attackers.
+
+2. Attacking a mySQL Database (Lab 7.3.2.4)
+Reviewed a SQL injection attack via a .pcap file in Wireshark.
+
+Observed commands like 1=1 and UNION SELECT revealing database info.
+
+Extracted table names, user data, and password hashes.
+
+Used CrackStation to crack hashes (e.g., hash 8d3533d7... => password Charley).
+
+Mitigation: Parameterized queries and input validation.
+
+🔧 Tools Used
+Wireshark: For traffic analysis and protocol inspection.
+
+CyberOps Workstation VM: Environment for secure lab execution.
+
+CrackStation.net: Online hash cracking tool.
+
+🛡️ Core Concepts Covered
+DNS Protocol Analysis
+
+SQL Injection Mechanics
+
+Network Reconnaissance Techniques
+
+Defensive Strategies: Input sanitization and traffic filtering
+
+📁 Directory Structure
+Week5_Cybersecurity/
+├── 7.3.1.6_Lab_Exploring_DNS_Traffic.pdf
+├── 7.3.2.4_Lab_Attacking_a_mySQL_Database.pdf
+└── README.md
+
+✅ Outcomes
+Understood the dual role of network tools in security and exploitation.
+
+Developed skills to detect malicious behavior using forensic traffic analysis.
+
+Practiced safe lab procedures to simulate real-world attack patterns.
